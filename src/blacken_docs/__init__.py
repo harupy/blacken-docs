@@ -53,7 +53,7 @@ RST_LITERAL_BLOCKS_RE = re.compile(
 )
 RST_PYCON_RE = re.compile(
     r"(?P<before>"
-    r"(?P<indent> *)\.\. ((code|code-block):: pycon|doctest::.*)\n"
+    r"(?P<indent> *)\.\. ((code|code-block|test-code-block):: pycon|doctest::.*)\n"
     r"((?P=indent) +:.*\n)*"
     r"\n*"
     r")"

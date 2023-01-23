@@ -27,7 +27,7 @@ MD_PYCON_RE = re.compile(
     r"(?P<after>^(?P=indent)```.*$)",
     re.DOTALL | re.MULTILINE,
 )
-BLOCK_TYPES = "(code|code-block|sourcecode|ipython)"
+BLOCK_TYPES = "(code|code-block|test-code-block|sourcecode|ipython)"
 DOCTEST_TYPES = "(testsetup|testcleanup|testcode)"
 RST_RE = re.compile(
     rf"(?P<before>"
